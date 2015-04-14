@@ -1062,6 +1062,10 @@ p {
     .logo {
       text-align: left; } }
 
+@media (min-width: 48rem) {
+  .cta {
+    text-align: right; } }
+
 .hero {
   background-color: #54c8ce;
   background-image: -webkit-linear-gradient(#54c8ce, #589dbb);

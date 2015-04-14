@@ -11,3 +11,9 @@
 		text-align: left;
 	}
 }
+
+.cta{
+	@include wider-than(tablet){
+		text-align: right;
+	}
+}
