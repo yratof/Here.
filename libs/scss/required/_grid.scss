@@ -23,43 +23,48 @@ values are commented out on each line.
 
 @import 'gridmath';
 
-// Each number here becomes a grid: onecol, twocol etc. 
-$grids: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve !global;
-$i: 1 !global;
-@each $grid in $grids {
-	.#{$grid}col {
-		width: col_width( $i );
-		width: col_width( $i, true );
+
+// Grid only wider than tablet
+@include wider-than(tablet){
+
+	// Each number here becomes a grid: onecol, twocol etc. 
+	$grids: one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve !global;
+	$i: 1 !global;
+	@each $grid in $grids {
+		.#{$grid}col {
+			width: col_width( $i );
+			width: col_width( $i, true );
+		}
+		
+		%#{$grid}col {
+			width: col_width( $i );
+			width: col_width( $i, true );
+		}
+		$i: $i + 1 !global;
 	}
 	
-	%#{$grid}col {
-		width: col_width( $i );
-		width: col_width( $i, true );
+	
+	// This then collates these classes into one class to apply the gutter
+	$classes: () !global;
+	@each $grid in $grids {
+	    $classes: join($classes, unquote(".#{$grid}col"), comma) !global;
 	}
-	$i: $i + 1 !global;
+	
+	#{$classes}, .fifthcol, .threefifth{
+	  position: relative;
+	  float: left;
+	  margin-left: $gutter;
+	  margin-left: calc(#{$gutter_em} * 1);
+	}
+	
+	%grid{
+	  position: relative;
+	  float: left;
+	  margin-left: $gutter;
+	  margin-left: calc(#{$gutter_em} * 1);
+	}
+
 }
-
-
-// This then collates these classes into one class to apply the gutter
-$classes: () !global;
-@each $grid in $grids {
-    $classes: join($classes, unquote(".#{$grid}col"), comma) !global;
-}
-
-#{$classes}, .fifthcol, .threefifth{
-  position: relative;
-  float: left;
-  margin-left: $gutter;
-  margin-left: calc(#{$gutter_em} * 1);
-}
-
-%grid{
-  position: relative;
-  float: left;
-  margin-left: $gutter;
-  margin-left: calc(#{$gutter_em} * 1);
-}
-
 /* 
 	This is a simpler way of using widths.
 	Adding an extra mixin to make widths fallbackabler.
