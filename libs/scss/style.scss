@@ -1,0 +1,24 @@
+/* Ownership of the stylesheets is global. */
+
+$site-name: Meat !global;
+$author:	Andrew + Eivin !global;
+
+// Setup
+$px-only: false;
+$ie: false;
+
+/* Bourbon Helpers */
+@import 'bourbon';
+
+// Helpers
+@import 'required/_normalize.scss', 'required/_functions.scss', 'required/_mixins.scss', 'required/_grid.scss';
+
+// Components
+@import 'components/*';
+
+// Elements
+@import 'required/_alerts.scss' ,'required/_animations.scss' ,'required/_columns.scss', 'required/_buttons.scss' ,'required/_forms.scss';
+
+
+// Pages
+@import 'pages/*';
