@@ -10,6 +10,9 @@ $ie: false;
 /* Bourbon Helpers */
 @import 'bourbon';
 
+// Mediaqueries
+@import 'required/breakpoints.scss';
+
 // Helpers
 @import 'required/_normalize.scss', 'required/_functions.scss', 'required/_mixins.scss', 'required/_grid.scss';
 

@@ -1,5 +1,19 @@
 /* Ownership of the stylesheets is global. */
 /* Bourbon Helpers */
+/*
+	These are the breakpoints for your website. These can be customised to your design. The 
+	more that I think about it, the more I'm starting to realise that these breakpoints 
+	need to change for the design, and not for the sizes they are. They're just a guide. 
+	In fact, I insist, you MUST change these.
+*/
+/* 
+	This is for something special. If px-only is defined in the u() function, 
+	then all rems are replaced with these breakpoints instead.
+*/
+/*
+	This is a breakpoint map. It allows us to use a loop of the breakpoints throughout
+	the site inside other loops and @each's. Mostly in _mixins.scss and _wrap.scss
+*/
 /* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
@@ -818,70 +832,70 @@ values are commented out on each line.
   width: NaN%;
   width: calc((99.95% - Infinityrem) / Infinity); }
 
-.onecol {
-  width: 5.7969383057%;
-  width: calc((99.95% - 11rem) / 12); }
+@media (min-width: 48rem) {
+  .onecol {
+    width: 5.7969383057%;
+    width: calc((99.95% - 11rem) / 12); }
 
-.twocol {
-  width: 14.3563075506%;
-  width: calc((99.95% - 5rem) / 6); }
+  .twocol {
+    width: 14.3563075506%;
+    width: calc((99.95% - 5rem) / 6); }
 
-.threecol {
-  width: 22.9156767956%;
-  width: calc((99.95% - 3rem) / 4); }
+  .threecol {
+    width: 22.9156767956%;
+    width: calc((99.95% - 3rem) / 4); }
 
-.fourcol {
-  width: 31.4750460405%;
-  width: calc((99.95% - 2rem) / 3); }
+  .fourcol {
+    width: 31.4750460405%;
+    width: calc((99.95% - 2rem) / 3); }
 
-.fivecol {
-  width: 40.0344152855%;
-  width: calc((99.95% - 1.4rem) / 2.4); }
+  .fivecol {
+    width: 40.0344152855%;
+    width: calc((99.95% - 1.4rem) / 2.4); }
 
-.sixcol {
-  width: 48.5937845304%;
-  width: calc((99.95% - 1rem) / 2); }
+  .sixcol {
+    width: 48.5937845304%;
+    width: calc((99.95% - 1rem) / 2); }
 
-.sevencol {
-  width: 57.1531537753%;
-  width: calc((99.95% - 0.7142857143rem) / 1.7142857143); }
+  .sevencol {
+    width: 57.1531537753%;
+    width: calc((99.95% - 0.7142857143rem) / 1.7142857143); }
 
-.eightcol {
-  width: 65.7125230203%;
-  width: calc((99.95% - 0.5rem) / 1.5); }
+  .eightcol {
+    width: 65.7125230203%;
+    width: calc((99.95% - 0.5rem) / 1.5); }
 
-.ninecol {
-  width: 74.2718922652%;
-  width: calc((99.95% - 0.3333333333rem) / 1.3333333333); }
+  .ninecol {
+    width: 74.2718922652%;
+    width: calc((99.95% - 0.3333333333rem) / 1.3333333333); }
 
-.tencol {
-  width: 82.8312615101%;
-  width: calc((99.95% - 0.2rem) / 1.2); }
+  .tencol {
+    width: 82.8312615101%;
+    width: calc((99.95% - 0.2rem) / 1.2); }
 
-.elevencol {
-  width: 91.3906307551%;
-  width: calc((99.95% - 0.0909090909rem) / 1.0909090909); }
+  .elevencol {
+    width: 91.3906307551%;
+    width: calc((99.95% - 0.0909090909rem) / 1.0909090909); }
 
-.twelvecol {
-  width: 99.95%;
-  width: calc((99.95% - 0rem) / 1); }
+  .twelvecol {
+    width: 99.95%;
+    width: calc((99.95% - 0rem) / 1); }
 
-.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol, .fifthcol, .threefifth {
-  position: relative;
-  float: left;
-  margin-left: 2.7624309392%;
-  margin-left: calc(1rem * 1); }
+  .onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol, .twelvecol, .fifthcol, .threefifth {
+    position: relative;
+    float: left;
+    margin-left: 2.7624309392%;
+    margin-left: calc(1rem * 1); }
 
+  .first {
+    margin-left: 0; }
+
+  .last {
+    float: right; } }
 /* 
 	This is a simpler way of using widths.
 	Adding an extra mixin to make widths fallbackabler.
 */
-.first {
-  margin-left: 0; }
-
-.last {
-  float: right; }
-
 .gutter-top {
   margin-top: 2.7624309392%;
   margin-top: calc(1rem * 1); }
@@ -890,32 +904,6 @@ values are commented out on each line.
   margin-bottom: 2.7624309392%;
   margin-bottom: calc(1rem * 1); }
 
-.third, .quarter, .half {
-  float: left; }
-
-.third {
-  width: 33.33333333333%; }
-
-.quarter {
-  width: 25%; }
-
-.half {
-  width: 50%; }
-
-/*
-	These are the breakpoints for your website. These can be customised to your design. The 
-	more that I think about it, the more I'm starting to realise that these breakpoints 
-	need to change for the design, and not for the sizes they are. They're just a guide. 
-	In fact, I insist, you MUST change these.
-*/
-/* 
-	This is for something special. If px-only is defined in the u() function, 
-	then all rems are replaced with these breakpoints instead.
-*/
-/*
-	This is a breakpoint map. It allows us to use a loop of the breakpoints throughout
-	the site inside other loops and @each's. Mostly in _mixins.scss and _wrap.scss
-*/
 /*
 	Wrapping the entire site
 	------------------------
@@ -1064,11 +1052,19 @@ p {
   font-size: 0.9rem; }
 
 .header {
-  padding: 1rem 0; }
+  padding: 1rem 0;
+  text-align: center; }
 
 .logo {
   margin: 0;
   color: #54c8ce; }
+  @media (min-width: 48rem) {
+    .logo {
+      text-align: left; } }
+
+@media (min-width: 48rem) {
+  .cta {
+    text-align: right; } }
 
 .hero {
   background-color: #54c8ce;

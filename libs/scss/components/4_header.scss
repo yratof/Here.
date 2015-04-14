@@ -1,8 +1,19 @@
 .header{
 	padding: u(1rem 0);
+	text-align: center;
 }
 
 .logo{
 	margin: 0;
 	color: $brand-colour;
+	
+	@include wider-than(tablet){
+		text-align: left;
+	}
+}
+
+.cta{
+	@include wider-than(tablet){
+		text-align: right;
+	}
 }
