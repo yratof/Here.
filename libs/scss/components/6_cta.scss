@@ -1,13 +1,16 @@
 #cta{
 	padding: u(2rem);
 	color: $white;
+	
+	.button{
+		margin-bottom: u(1.5rem);
+	}
 
 	a.link{
 		display: block;
 		text-align: center;
 		color: $brand-accent;
 		text-decoration: underline;
-		margin: u(2rem) auto;
 		font-size: u(0.8rem);
 	}
 }
