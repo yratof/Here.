@@ -38,15 +38,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/kits\/components\/website.html": {
-		"fileType": 8192,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/kits\/components\/website.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/kits\/components\/website.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -80,6 +71,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/elements\/hero.kit",
 		"outputAbbreviatedPath": "\/kits\/elements\/hero.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/kits\/elements\/testimonials.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kits\/elements\/testimonials.kit",
+		"outputAbbreviatedPath": "\/kits\/elements\/testimonials.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -224,6 +224,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/libs\/scss\/components\/6_cta.scss",
 		"outputAbbreviatedPath": "\/libs\/scss\/css\/6_cta.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/libs\/scss\/components\/7_testimonials.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/libs\/scss\/components\/7_testimonials.scss",
+		"outputAbbreviatedPath": "\/libs\/scss\/css\/7_testimonials.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,

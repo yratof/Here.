@@ -1,0 +1,39 @@
+.testimonial{
+	
+	display: block;
+	max-width: 65vw;
+	margin: u(2rem) auto;
+	
+	
+	p, aside {
+		vertical-align: middle;
+	}
+	
+	p{
+		width: 79%;	
+		display: inline-block;
+		text-align: left;
+		font-size: u(1.125rem);
+	}
+	
+	aside{
+		width: 20%;
+		display: inline-block;
+		text-align: center;
+		
+		.profile{
+			border-radius: u(100rem);
+			width: 50%;
+			height: auto;
+			display: block;
+			margin: 0 auto u(1rem);
+		}	
+	}
+	
+	strong{
+		display: block;
+		font-weight: 300;
+		font-family: $sans-serif-medium;
+		color: $brand-highlight;
+	}
+}

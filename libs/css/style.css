@@ -1087,13 +1087,13 @@ p {
   @media (min-width: 48rem) {
     .website-carousel .website:nth-of-type(1) {
       display: inline-block;
-      left: 0%;
+      left: 0;
       -webkit-transform: translateX(-50%);
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       transform: translateX(-50%);
-      opacity: 0.5; } }
+      opacity: 0.3; } }
 .website-carousel .website:nth-of-type(2) {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -1112,7 +1112,7 @@ p {
       -ms-transform: translateX(-50%);
       -o-transform: translateX(-50%);
       transform: translateX(-50%);
-      opacity: 0.5; } }
+      opacity: 0.3; } }
 
 .website {
   background-color: #f7f7f7;
@@ -1165,6 +1165,40 @@ p {
 #cta {
   padding: 2rem;
   color: #fff; }
+  #cta a.link {
+    display: block;
+    text-align: center;
+    color: #58676e;
+    text-decoration: underline;
+    margin: 2rem auto;
+    font-size: 0.8rem; }
+
+.testimonial {
+  display: block;
+  max-width: 65vw;
+  margin: 2rem auto; }
+  .testimonial p, .testimonial aside {
+    vertical-align: middle; }
+  .testimonial p {
+    width: 79%;
+    display: inline-block;
+    text-align: left;
+    font-size: 1.125rem; }
+  .testimonial aside {
+    width: 20%;
+    display: inline-block;
+    text-align: center; }
+    .testimonial aside .profile {
+      border-radius: 100rem;
+      width: 50%;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem; }
+  .testimonial strong {
+    display: block;
+    font-weight: 300;
+    font-family: "NeueHaasUnicaPro-Medium";
+    color: #589dbb; }
 
 /******************************************************************
 Site Name:

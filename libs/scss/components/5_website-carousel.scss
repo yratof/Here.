@@ -20,6 +20,7 @@
 }
 
 .website-carousel{
+	$fade: 0.3;
 
 	.website{
 		&:nth-of-type(1){
@@ -27,9 +28,9 @@
 			
 			@include wider-than(tablet){
 				display: inline-block;
-				left: 0%;
+				left: 0;
 				@include transform(translateX(-50%));
-				opacity: 0.5;				
+				opacity: $fade;				
 			}
 		}
 		
@@ -45,7 +46,7 @@
 				display: inline-block;
 				left: 100%;
 				@include transform(translateX(-50%));
-				opacity: 0.5;
+				opacity: $fade;
 			}
 		}
 	}
