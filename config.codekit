@@ -4,7 +4,7 @@
 "files": {
 	"\/index.html": {
 		"fileType": 8192,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
@@ -56,6 +56,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/kits\/elements\/6reasons.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kits\/elements\/6reasons.kit",
+		"outputAbbreviatedPath": "\/kits\/elements\/6reasons.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/kits\/elements\/cta.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kits\/elements\/cta.kit",
+		"outputAbbreviatedPath": "\/kits\/elements\/cta.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/kits\/elements\/hero.kit": {
+		"fileType": 2048,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/kits\/elements\/hero.kit",
+		"outputAbbreviatedPath": "\/kits\/elements\/hero.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/kits\/elements\/website-carousel.kit": {
 		"fileType": 2048,
 		"ignore": 1,
@@ -70,9 +97,9 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/kits\/index.kit",
-		"outputAbbreviatedPath": "\/kits\/index.html",
+		"outputAbbreviatedPath": "\/index.html",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
+		"outputPathIsSetByUser": 1
 		},
 	"\/kits\/sample.kit": {
 		"fileType": 2048,
@@ -181,6 +208,22 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/libs\/scss\/components\/5_website-carousel.scss",
 		"outputAbbreviatedPath": "\/libs\/scss\/css\/5_website-carousel.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
+	"\/libs\/scss\/components\/6_cta.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/libs\/scss\/components\/6_cta.scss",
+		"outputAbbreviatedPath": "\/libs\/scss\/css\/6_cta.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
