@@ -1,0 +1,72 @@
+
+.price-table{
+	
+	.sub-title {
+		display: block;
+		text-align: center;
+	}
+}
+
+.price{
+	padding: u(1rem);
+	
+	table{
+		width: 100%;
+		margin: 0 auto;
+		border: 1px solid fade-out($brand-highlight, 0.95);
+	}
+	
+	th{
+		span{
+			display: block;
+			font-size: u(2rem);
+			font-family: $Unica-Bold; // Are you sure?
+			color: $brand-highlight;
+			
+			&:after{
+				content: "(+ vat)";
+				font-size: u(0.85rem);
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: u(0.2rem);
+			}
+		}
+		
+		small{ 
+			display: block;
+			font-family: $sans-serif-light;
+			opacity: 0.5;
+		}
+		
+		display: block;
+		border-bottom: 2px solid fade-out($brand-highlight, 0.5); 
+		margin-bottom: u(1rem);
+		padding: u(1rem);
+	}
+	
+	tbody{
+		// Make every other row different
+		tr{
+			
+			&:nth-of-type(odd){
+				font-family: $sans-serif-medium;
+			}
+	
+			&:nth-of-type(even){
+				background-color: fade-out($brand-highlight, 0.95);
+			}
+			
+			td{
+				padding: u(0.3rem 0);
+			}
+		}
+	}
+	
+	tfoot{
+		td{
+			display: block;
+			padding: u(1rem);
+		}
+	}
+	
+}

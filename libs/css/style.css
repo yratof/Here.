@@ -1206,6 +1206,46 @@ p {
     font-family: "NeueHaasUnicaPro-Medium";
     color: #589dbb; }
 
+.price-table .sub-title {
+  display: block;
+  text-align: center; }
+
+.price {
+  padding: 1rem; }
+  .price table {
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid rgba(88, 157, 187, 0.05); }
+  .price th {
+    display: block;
+    border-bottom: 2px solid rgba(88, 157, 187, 0.5);
+    margin-bottom: 1rem;
+    padding: 1rem; }
+    .price th span {
+      display: block;
+      font-size: 2rem;
+      font-family: "NeueHaasUnicaPro-Bold";
+      color: #589dbb; }
+      .price th span:after {
+        content: "(+ vat)";
+        font-size: 0.85rem;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.2rem; }
+    .price th small {
+      display: block;
+      font-family: "NeueHaasUnicaPro-Light";
+      opacity: 0.5; }
+  .price tbody tr:nth-of-type(odd) {
+    font-family: "NeueHaasUnicaPro-Medium"; }
+  .price tbody tr:nth-of-type(even) {
+    background-color: rgba(88, 157, 187, 0.05); }
+  .price tbody tr td {
+    padding: 0.3rem 0; }
+  .price tfoot td {
+    display: block;
+    padding: 1rem; }
+
 /******************************************************************
 Site Name:
 Author:
